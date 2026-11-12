@@ -38,4 +38,4 @@ To preview without Docker, run `cd public && python3 -m http.server 8080`.
 7. Click **Deploy**. The container's healthcheck hits `/healthz`.
 8. Optional: turn on **Auto Deploy** with the Git webhook so each push redeploys.
 
-If you'd rather use Compose, choose the **Docker Compose** build pack. It uses `docker-compose.yml` as-is.
+If you'd rather use Compose, choose the **Docker Compose** build pack. It uses `docker-compose.yml` only (no host port is published, which avoids "port is already allocated" errors). Set the domain on the service and Coolify routes it to container port 80. `docker-compose.override.yml` adds the `8080:80` mapping for local runs only.

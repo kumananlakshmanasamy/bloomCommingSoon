@@ -1,0 +1,6 @@
+# Local-only: auto-loaded by `docker compose up`. Coolify runs with an explicit
+# `-f docker-compose.yml`, so this file is not applied on the server.
+services:
+  bloom-launch:
+    ports:
+      - "8080:80"

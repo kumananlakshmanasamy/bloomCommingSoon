@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "cream-palette",
+        "value": "*",
+        "files": [
+          "bloom-launch/public/index.html"
+        ],
+        "createdAt": "2026-11-12T12:46:54.033Z",
+        "reason": "Brand surface colour: #F9F3EE is color_surface in the existing bloom & body co. Shopify theme config/settings_data.json"
+      }
+    ]
+  }
+}
